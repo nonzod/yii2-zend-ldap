@@ -1,0 +1,26 @@
+{
+    "name": "nonzod/yii2-zend-ldap",
+    "description": "yii2 ldap extention (wrapper for zendframework/zend-ldap Module)",
+    "type": "yii2-extension",
+    "keywords": ["ldap","yii2", "zendframework", "zend-ldap"],
+    "homepage": "http://www.digisin.it",
+    "time": "2016-04-12",
+    "license": "LGPL-2.1",
+    "authors": [
+        {
+            "name": "Nicola Tomassoni",
+            "email": "nicola@digisin.it",
+            "homepage": "http://www.digisin.it",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "adldap2/adldap2": "2.*",
+	"yiisoft/yii2": "*"
+    },
+    "autoload": {
+        "psr-4" : {
+            "nonzod\\" : "src/"
+        }
+    }
+}
