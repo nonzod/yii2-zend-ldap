@@ -17,7 +17,8 @@ namespace nonzod;
  * Lesser General Public License for more details.
  */
 use yii\base\Component; //include YII component class
-use Zend\Ldap\Ldap;
+use Zend\Ldap\Ldap as ZLdap;
+use Zend\Ldap\Exception\LdapException;
 
 class Ldap extends Component {
 
@@ -34,17 +35,17 @@ class Ldap extends Component {
    *
    * @var array Array with option values
    */
-  public $options = [];
+  public $config = [];
 
   /**
-   * init() called by yii.
+   * init() called by yii. $ldap->setOptions($options);
    */
   public function init() {
-//        try {
-    $this->ZendLdapClass = new Ldap($this->options);
-//        } catch (Exception $e) {
-//            throw $e;
-//        }
+    try {
+      $this->ZendLdapClass = new ZLdap($this->config);
+    } catch (LdapException $zle) {
+      echo '  ' . $zle->getCode() . ' : ' . $zle->getMessage() . "\n";
+    }
   }
 
   /**
