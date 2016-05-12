@@ -4,7 +4,8 @@ namespace nonzod;
 
 /**
  * YII2 wrapper class for the Zend Ldap Module.
- * Look at https://packagist.org/packages/adldap/adldap for the zend-ldap Module
+ * Look at http://framework.zend.com/manual/current/en/modules/zend.ldap.api.html
+ * for the zend-ldap Module
  *
  * This library is free software; you can redistribute it and/or
  * modify it under the terms of the GNU Lesser General Public
@@ -25,20 +26,20 @@ class Ldap extends Component {
   /**
    * The internal zend-ldap object.
    *
-   * @var object zend-ldap
+   * @var object Zend\Ldap\Ldap
    */
   private $ZendLdapClass;
 
   /**
    * Options variable for the zend-ldap module.
-   * See zend-ldap __construct function for possible values.
+   * See Zend\Ldap\Ldap __construct function for possible values.
    *
-   * @var array Array with option values
+   * @var array Array with config values
    */
   public $config = [];
 
   /**
-   * init() called by yii. $ldap->setOptions($options);
+   * init() called by yii.
    */
   public function init() {
     try {
@@ -49,10 +50,10 @@ class Ldap extends Component {
   }
 
   /**
-   * Use magic PHP function __call to route function calls to the zend-ldap class.
-   * Look into the zend-ldap class for possible functions.
+   * Use magic PHP function __call to route function calls to the Zend\Ldap\Ldap class.
+   * Look into the Zend\Ldap\Ldap class for possible functions.
    *
-   * @param string $methodName Method name from zend-ldap class
+   * @param string $methodName Method name from Zend\Ldap\Ldap class
    * @param array $methodParams Parameters pass to method
    * @return mixed
    */
