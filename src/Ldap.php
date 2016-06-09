@@ -16,6 +16,11 @@ namespace nonzod;
  * but WITHOUT ANY WARRANTY; without even the implied warranty of
  * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
  * Lesser General Public License for more details.
+ * 
+ * THANKS TO "Matthias Maderer" this extension is inspired by his project 
+ * "edvlerblog/yii2-adldap-module" 
+ * 
+ * @see https://github.com/edvler/yii2-adldap-module
  */
 use yii\base\Component; //include YII component class
 use Zend\Ldap\Ldap as ZLdap;
