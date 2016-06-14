@@ -1,11 +1,11 @@
 # Yii2 Zend Ldap wrapper
 
-##Requirements
+## Requirements
 
 * Yii2
 * LDAP support in PHP
 
-##Usage
+## Usage
 
 The preferred way to install this extension is through [Composer](http://getcomposer.org/ "Composer").
 
