@@ -11,11 +11,11 @@ The preferred way to install this extension is through [Composer](http://getcomp
 
 Either run
 
-`php composer.phar require nonzod/yii2-zend-ldap "0.0.6"`
+`php composer.phar require nonzod/yii2-zend-ldap "0.0.7"`
 
 or add
 
-`"nonzod/yii2-zend-ldap": ">=0.0.6"` 
+`"nonzod/yii2-zend-ldap": ">=0.0.7"` 
 
 to the require section of your composer.json
 
