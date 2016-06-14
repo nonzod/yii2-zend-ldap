@@ -22,7 +22,9 @@ to the require section of your composer.json
 Configuration
 
 ~~~php
-'components' => [
+<?php
+...
+  'components' => [
     'ldap' => [
       'class' => 'nonzod\Ldap',
       'config' => [
@@ -35,6 +37,7 @@ Configuration
         'accountDomainName' => 'example.com'
       ]
     ],
+  ...
 ~~~
 
 ##Resources
