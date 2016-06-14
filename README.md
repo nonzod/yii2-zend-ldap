@@ -21,7 +21,7 @@ to the require section of your composer.json
 
 Configuration
 
-~~~
+~~~php
 'components' => [
     'ldap' => [
       'class' => 'nonzod\Ldap',
